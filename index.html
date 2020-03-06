@@ -8,8 +8,134 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   </head>
   <body>
+    <div class="wrapper">
+      <div class="inner">
+        <div class="form-content">
+          <header class="header">
+            <h1 class="header__title">アカウント作成</h1>
+            <div class="header__link">
+              <div class="header__link__column is-half-width">
+                <a href="" class="link-btn facebook">Facebookでスタート</a>
+              </div>
+              <div class="header__link__column is-half-width">
+                <a href="" class="link-btn google">Googleでスタート</a>
+              </div>
+            </div>
+            <p class="header__text is-default-text">
+              タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。
+            </p>
+          </header>
 
+          <main class="main">
+            <div class="form-title">
+              <p class="is-default-text">アカウント情報</p>
+            </div>
+            <form action="" class="form-main">
+              <div class="row name-form">
+                <div class="name is-half-width">
+                  <p class="label-text">名字<span class="alert"></span></p>
+                  <input class="input-frame input-area" type="text">
+                </div>
+                <div class="name is-half-width">
+                  <p class="label-text">名前<span class="alert"></span></p>
+                  <input class="input-frame input-area" type="text">
+                </div>
+              </div>
+
+              <div class="row gender-form">
+                <p class="label-text">性別</p>
+                <div class="gender-contents">
+                  <label class="gender-radio-btn">
+                    <input class="gender-radio is-none" type="radio" name="gender">
+                    <span>男性</span>
+                  </label>
+                  <label class="gender-radio-btn">
+                    <input class="gender-radio is-none" type="radio" name="gender">
+                    <span>女性</span>
+                  </label>
+                  <label class="gender-radio-btn">
+                    <input class="gender-radio is-none" type="radio" name="gender">
+                    <span>その他</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="row from-form is-half-width">
+                <p class="label-text">出身</p>
+                <div class="select-area">
+                  <select name="" id="" class="input-frame input-area">
+                    <option value="">東京</option>
+                    <option value="">千葉</option>
+                    <option value="">埼玉</option>
+                    <option value="">神奈川</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mail-form">
+                <p class="label-text">Eメール<span class="alert"></span></p>
+                <input type="text" class="input-frame input-area" placeholder="ex) hoge@example.com">
+              </div>
+
+              <div class="row telephone-num">
+                <p class="label-text">電話番号</p>
+                <input type="text" class="input-frame input-area" placeholder="ex) 09012345678">
+              </div>
+
+              <div class="row password">
+                <p class="label-text">パスワード<span class="alert"></span></p>
+                <input type="password" class="input-frame input-area">
+              </div>
+
+              <div class="row password-confirm">
+                <p class="label-text">パスワード(確認用)<span class="alert"></span></p>
+                <input type="password" class="input-frame input-area">
+              </div>
+
+              <div class="row course">
+                <p class="label-text">希望コース</p>
+                <div class="check-box">
+                  <input type="checkbox" class="check-area is-none" id="front">
+                  <label class="check-box-text" for="front">
+                    フロントエンド
+                  </label>
+                </div>
+                <div class="check-box">
+                  <input type="checkbox" class="check-area is-none" id="back">
+                  <label class="check-box-text" for="back">
+                    バックエンド
+                  </label>
+                </div>
+                <div class="check-box">
+                  <input type="checkbox" class="check-area is-none" id="app">
+                  <label class="check-box-text" for="app">
+                    アプリ
+                  </label>
+                </div>
+              </div>
+              <div class="row remarks">
+                <p class="label-text">備考</p>
+                <textarea type="text" class="input-frame input-area" placeholder="何かあればご記入ください"></textarea>
+              </div>
+              <div class="row">
+                <button type="submit" class="input-frame btn submit-btn">アカウント作成</button>
+              </div>
+              <p class="text">
+                アカウントを作成することにより、<a class="text-link" href="">利用規約</a>と<a class="text-link" href="">プライバシーポリシー</a>に同意するものとします。
+              </p>
+            </form>
+          </main>
+        </div>
+
+        <footer class="footer-content">
+          <p class="text">すでにアカウントをお持ちですか？ <a class="text-link" href="">ログイン</a></p>
+          <a href="" class="text text-link resend-mail">認証メールが届きませんか？</a>
+        </footer>
+
+      </div>
+    </div>
   </body>
 </html>

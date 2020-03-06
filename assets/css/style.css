@@ -1,1 +1,325 @@
 @charset "utf-8";
+
+/* 共通スタイル */
+.is-half-width {
+  width: 50%;
+}
+
+.is-default-text {
+  font-size: 12px;
+  color: #949697;
+}
+
+.is-none {
+  display: none;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+}
+
+.label-text {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.alert {
+  color: #DD4B39;
+  margin-left: 3px;
+}
+
+.alert::after {
+  content: "※";
+}
+
+.input-frame {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  resize: none;
+  border: none;
+}
+
+.input-area {
+  width: 100%;
+  height: 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #FBFBFB;
+  padding: 5px;
+  font-size: 13px;
+  color: #545658;
+  line-height: 2;
+}
+
+.input-frame:focus {
+  outline: 0;
+  box-shadow: 0 0 2px 0 rgb(68, 199, 251);
+  background-color: #fff;
+}
+
+.btn {
+  border-radius: 3px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.text-link {
+  color: #01A6A4;
+}
+/*  */
+
+.wrapper {
+  background-color: #f2f6f7;
+  width: 100%;
+  padding: 32px 0;
+  color: #545658;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.form-content {
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  border-radius: 4px;
+  padding: 48px 64px;
+  margin-bottom: 32px;
+}
+
+
+/* header */
+.header__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.header__link {
+  display: flex;
+}
+
+.header__link__column:last-child {
+  margin-left: 8px;
+}
+
+.link-btn {
+  display: inline-block;
+  padding: 13px;
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  font-size: 13px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+.facebook {
+  border-color: #3b5999;
+  background-color: #3b5999;
+  color: #fff;
+}
+
+.facebook:hover {
+  background-color: #344e87;
+}
+
+.google {
+  color: #DD4B89;
+}
+
+.google:hover {
+  background-color: #f7f7f7;
+}
+
+.header__text {
+  margin-top: 8px;
+  text-align: center;
+}
+/*  */
+
+.form-title {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+}
+
+.form-title p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.form-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.name-form {
+  display: flex;
+}
+
+.name {
+  margin-left: 16px;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+.gender-contents {
+  display: flex;
+}
+
+.gender-radio-btn {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gender-radio-btn:first-child {
+  margin-left: 0;
+}
+
+.gender-radio-btn span {
+  vertical-align: middle;
+}
+
+.gender-radio-btn span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-radio-btn span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-radio:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+.select-area {
+  position: relative;
+  border: 1px;
+}
+
+.select-area select:focus {
+  background-color: #fbfbfb;
+}
+
+.select-area::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.check-box {
+  margin-bottom: 10px;
+}
+
+.check-box-text {
+  padding-left: 25px;
+  position: relative;
+}
+
+.check-box-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border: solid 1px #d9d9d9;
+  width: 15px;
+  height: 15px;
+}
+
+/* チェックマーク */
+.check-area:checked + .check-box-text::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  bottom: 10%;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+}
+/*  */
+
+.remarks textarea {
+  height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
+.text-link:hover {
+  color: #01bfbd;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content .text {
+  margin-bottom: 8px;
+}
+
+.footer-content a:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #01bfbd;
+}
+
+.resend-mail {
+  display: inline-block;
+}
